@@ -231,5 +231,14 @@ body {
     display: inline-block;
     
     padding-bottom: 10px;
+}
 
+.fontes{
+    padding-left:25px;
+}
+
+.fontes a{
+    text-decoration: none;
+    color: #121212;
+    padding-bottom: 10px;
 }
