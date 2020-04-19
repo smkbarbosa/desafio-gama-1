@@ -47,3 +47,135 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
+.intro{
+    padding: 150px;
+    display: flex;
+}
+
+.intro-container{
+    align-items: center;
+    max-width: 960px;
+	margin: 0 auto;
+}
+
+.intro-container::after, .intro-container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.intro-item{
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.intro-item h2 {
+    padding-bottom: 35px;
+}
+
+.intro-item h3 {
+    
+    padding: 10px;
+    background-color: #121212;
+    color: #fff;
+    justify-content: center;
+}
+
+.intro img{   
+    padding-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 30px;
+    
+}
+
+.card-item{
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    width: (100%/3 + 10px);
+    background-color: #fff;
+    color: #121212;
+    text-align: left;
+    font-size: 16px;
+    border: 3px solid #121212;
+    
+    flex-flow: row wrap;
+}
+
+.card-item * {
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card-item img{
+    margin: 0 auto;
+    width: 200px;
+    height: 180px;
+    max-width: 100%;
+    vertical-align: 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.card-item figcaption{
+    padding: 25px;
+    position: relative;
+}
+
+.card-item h3{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.card-item p{
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+.card-item button{
+    border: medium none;
+    padding: 10px 20px;
+    background-color: #121212;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.card-item a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-item:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
