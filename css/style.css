@@ -10,11 +10,12 @@ body {
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
 }
 
-#menu{
-    /* margin: 35px 35px ; */
+.menu-container{
     padding: 45px 0;
     background-color: #121212;
     width: 100%;
+    height: 48px;
+    margin-bottom: 3.6em;
 }
 
 .site-title{
@@ -31,7 +32,6 @@ body {
 }
 
 .nav-list li{
-    display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,14 +48,34 @@ body {
     color: #fff;
 }
 
+#menu::after, #menu::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 640px) {
+    .menu-container{
+        padding: 60px;
+    }
+    .nav-list{
+        float: none;
+        clear: both;
+    }
+    
+}
+
 .intro{
     padding: 150px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .intro-container{
-    align-items: center;
-    max-width: 960px;
+    
+    justify-content: center;
+    max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -66,7 +86,7 @@ body {
 }
 
 .intro-item{
-    width: 460px;
+    max-width: 460px;
     float: left;
     margin: 0 10px;
 }
@@ -76,27 +96,44 @@ body {
 }
 
 .intro-item h3 {
-    
+    justify-content: center;
     padding: 10px;
     background-color: #121212;
     color: #fff;
     justify-content: center;
 }
 
-.intro img{   
-    padding-left: 100px;
+.intro img{  
+    justify-content: center; 
+    padding-bottom: 20px;
+    max-width: 100%;
     width: 200px;
     height: 200px;
 }
 
+@media (max-width: 640px) {
+    .intro-container{
+        align-items: center;
+    }
+    .intro-item img{
+        padding-bottom: 30px;
+    } 
+}
+
 .cards-container{
     display: flex;
+    width: 80%;
+    margin-left: 10em;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 0;
     padding-bottom: 30px;
-    
 }
+
+/* @media (max-width: 739px) {
+    .cards-container{
+        margin-left: 5em
+    } 
+} */
 
 .card-item{
     color: #fff;
@@ -113,6 +150,7 @@ body {
     border: 3px solid #121212;
     
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .card-item * {
@@ -135,7 +173,7 @@ body {
 }
 
 .card-item figcaption{
-    padding: 25px;
+    padding: 10px;
     position: relative;
 }
 
@@ -263,3 +301,9 @@ body {
     color: #fff;
 }
 
+.card-item iframe{
+    justify-content: center;
+    height: 200px;
+    height: 186px;
+    width: 100%;
+}
