@@ -247,11 +247,6 @@ body {
     padding-bottom: 20px;
     background-color: #ffff;
 }
-.linkedin a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .linkedin button{
     border: medium none;
     padding: 10px 20px;
@@ -262,3 +257,9 @@ body {
     text-transform: uppercase;
     font-size: 0.8em;
 }
+
+.linkedin a{
+    text-decoration: none;
+    color: #fff;
+}
+
