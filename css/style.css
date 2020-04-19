@@ -210,3 +210,26 @@ body {
     text-decoration: none;
     color: #fff
 }
+
+/* SOBRE */
+
+.sobre img{
+    padding:0;
+    border-radius: 50%;
+}
+
+.autor{
+    padding: 10px;
+}
+
+.tags {
+    display: inline-block;
+}
+
+.tags li{
+    list-style: none;
+    display: inline-block;
+    
+    padding-bottom: 10px;
+
+}
