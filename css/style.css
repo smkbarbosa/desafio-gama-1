@@ -7,8 +7,43 @@ body, h1, h2, h3, p, ul {
 }
 
 body {
-    /* padding-top: 150px; */
-    
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-    
+}
+
+#menu{
+    /* margin: 35px 35px ; */
+    padding: 45px 0;
+    background-color: #121212;
+    width: 100%;
+}
+
+.site-title{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+.nav-list{
+    list-style: none;
+    float: right;
+}
+
+.nav-list li{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav-list a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
 }
