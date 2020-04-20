@@ -149,7 +149,7 @@ body {
     margin: 10px;
     min-width: 220px;
     max-width: 310px;
-    width: (100%/3 + 10px);
+    width: 100%;
     background-color: #fff;
     color: #121212;
     text-align: left;
