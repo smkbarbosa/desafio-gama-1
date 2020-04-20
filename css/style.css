@@ -303,11 +303,12 @@ body {
     padding-bottom: 10px;
 }
 
-.linkedin{
+._linkedin{
     padding-bottom: 20px;
     background-color: #ffff;
 }
-.linkedin-button{
+
+._linkedin-button{
     border: medium none;
     padding: 10px 20px;
     font-weight: 800;
@@ -318,7 +319,7 @@ body {
     font-size: 0.8em;
 }
 
-.linkedin a{
+._linkedin a{
     text-decoration: none;
     color: #fff;
 }
